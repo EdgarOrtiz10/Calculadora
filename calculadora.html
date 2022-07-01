@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora con JavaScript</title>
+    <link type="text/css" href="calculadora.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body onload="init();">
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">  
+                <table class="calculadora">
+                    <tr>
+                        <td colspan="4"><span id="resultado"></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="uno" value="1"></td>
+                        <td><input type="submit" id="dos" value="2"></td>
+                        <td><input type="submit" id="tres" value="3"></td>
+                        <td><input type="submit" id="suma" value="+"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="cuatro" value="4"></td>
+                        <td><input type="submit" id="cinco" value="5"></td>
+                        <td><input type="submit"  id="seis" value="6"></td>
+                        <td><input type="submit" id="multiplicacion" value="*"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="siete" value="7"></td>
+                        <td><input type="submit" id="ocho" value="8"></td>
+                        <td><input type="submit"  id="nueve" value="9"></td>
+                        <td><input type="submit" id="division" value="/"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="igual" value="="></td>
+                        <td><input type="submit" id="reset" value="C"></td>
+                        <td><input type="submit" id="cero" value="0"></td>
+                        <td><input type="submit" id="resta" value="-"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
